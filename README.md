@@ -38,3 +38,4 @@ Using password file to login for furture full automation
    Login-AzureRmAccount -Credential $cred
 ```
    
+[Thanks Daivd Lee's work]: https://blog.kloud.com.au/2016/04/21/using-saved-credentials-securely-in-powershell-scripts/
