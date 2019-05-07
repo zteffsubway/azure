@@ -13,7 +13,8 @@ Using password file to login for furture full automation
 
 2. Generate an AES Key and save the key into filesystem
 ```powershell
-     $theKey = new-object Byte[] 32 # it is either 16 bytes (128 bits), 24 bytes (192 bits), 32 bytes (256 bits)
+     #the Byte[] size can either set to 16 bytes (128 bits), 24 bytes (192 bits), 32 bytes (256 bits)
+     $theKey = new-object Byte[] 32 
      [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($theKey)
      sc ./.AesKey $thekey
 ```
